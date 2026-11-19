@@ -1,10 +1,13 @@
 # Firma Gmail — Ethica Properties
 
-## Abrir (un clic)
+## Abrir como página (NO como código)
 
-**https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/COPIAR-FIRMA-GMAIL.html**
+Usa este enlace (renderiza el HTML en el navegador):
 
-1. Pulsa **Copiar firma para pegar en Gmail**
-2. Gmail → Configuración → Firma → Ctrl+V / Cmd+V → Guardar
+**https://htmlpreview.github.io/?https://raw.githubusercontent.com/pedrofdezb/analyst2/main/COPIAR-FIRMA-GMAIL.html**
 
-No hace falta subir nada a Webflow: las imágenes ya están en este repo (CDN público).
+1. Espera a que cargue la página (foto + botón azul).
+2. Pulsa **Copiar firma para pegar en Gmail**.
+3. Gmail → ⚙️ → Firma → Ctrl+V / Cmd+V → Guardar.
+
+> Si abres el archivo en jsDelivr o “Raw” de GitHub verás código. Eso es normal: esos enlaces no renderizan HTML.
