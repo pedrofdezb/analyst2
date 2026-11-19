@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Opción óptima — Firma Gmail Ethica</title>
+  <style>
+    :root { --navy:#1e3a5f; --sand:#e8d1b5; --bg:#f4f5f7; --ink:#1a1a1a; --muted:#5b6472; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink);
+      background: radial-gradient(1000px 420px at 0% 0%, #e8d1b5 0%, transparent 50%), var(--bg);
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 36px 20px 72px; }
+    h1 { font-size: 26px; margin: 0 0 10px; letter-spacing: -0.02em; }
+    h2 { font-size: 17px; margin: 28px 0 10px; }
+    p, li { color: var(--muted); line-height: 1.55; font-size: 14px; }
+    .card {
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 12px;
+      padding: 18px 20px; margin: 12px 0;
+    }
+    .card.best { border-color: var(--navy); box-shadow: 0 8px 24px rgba(30,58,95,.1); }
+    .badge {
+      display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; background: var(--navy); color: #fff;
+      padding: 4px 8px; border-radius: 999px; margin-bottom: 8px;
+    }
+    .badge.alt { background: #6b7280; }
+    .badge.bad { background: #b91c1c; }
+    a.btn {
+      display: inline-block; margin-top: 12px; background: var(--navy); color: #fff;
+      text-decoration: none; font-weight: 700; padding: 12px 16px; border-radius: 10px; cursor: pointer;
+    }
+    a.btn.secondary { background: #fff; color: var(--navy); border: 1px solid var(--navy); }
+    code { background: #f3f4f6; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+    ol { padding-left: 20px; }
+    .no { text-decoration: line-through; opacity: .75; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p><a href="index.html">← Inicio</a></p>
+    <h1>Cuál es la opción óptima</h1>
+    <p>
+      Gmail <strong>no interpreta</strong> el código HTML si lo pegas como texto en el cuadro de firma.
+      Por eso “copiar el código y pegarlo” no funciona. La firma tiene que entrar como
+      <strong>contenido enriquecido</strong> (lo que ves en pantalla), con imágenes en HTTPS.
+    </p>
+
+    <div class="card best">
+      <div class="badge">Recomendada · máxima calidad</div>
+      <h2 style="margin-top:0">1) Imágenes en tu web + copiar firma renderizada</h2>
+      <p>
+        Sube la carpeta <code>hosting/</code> a
+        <code>https://www.ethicaproperties.com/firma/</code>
+        (foto, logo e iconos). Luego abre la página HTTPS, pulsa
+        <strong>Copiar firma</strong> y pégala en Gmail.
+      </p>
+      <p>
+        Ventajas: imágenes nítidas, enlaces estables, se ven bien en móvil y escritorio,
+        y no dependen de archivos locales ni de base64 (que Gmail suele romper).
+      </p>
+      <ol>
+        <li>Sube todo lo de <code>firma-email/hosting/</code> a tu hosting en la ruta <code>/firma/</code>.</li>
+        <li>Comprueba en el navegador:
+          <code>https://www.ethicaproperties.com/firma/foto-180.jpg</code></li>
+        <li>Abre <a href="firma-gmail-https.html">firma-gmail-https.html</a> (o súbela también a la web).</li>
+        <li>Pulsa <strong>Copiar firma al portapapeles</strong>.</li>
+        <li>Gmail → ⚙️ → Ver toda la configuración → Firma → Ctrl+V → Guardar cambios.</li>
+      </ol>
+      <a class="btn" href="firma-gmail-https.html">Abrir firma HTTPS (óptima)</a>
+      <a class="btn secondary" href="firma-gmail-local.html">Probar copia ahora (local)</a>
+    </div>
+
+    <div class="card">
+      <div class="badge alt">Buena · inmediata</div>
+      <h2 style="margin-top:0">2) Copiar desde el navegador (sin subir aún)</h2>
+      <p>
+        Abre <a href="firma-gmail-local.html">firma-gmail-local.html</a>, pulsa el botón azul
+        y pega en Gmail. Sirve para probar ya. En algunos casos Gmail re-alojará las imágenes;
+        si alguna falla con el tiempo, pasa a la opción 1.
+      </p>
+      <a class="btn secondary" href="firma-gmail-local.html">Copiar firma ahora</a>
+    </div>
+
+    <div class="card">
+      <div class="badge bad">No usar</div>
+      <h2 style="margin-top:0" class="no">Pegar el código HTML en bruto</h2>
+      <p>
+        Si pegas el <code>&lt;table&gt;...</code> como texto, Gmail lo muestra como código o lo limpia.
+        No es un editor HTML: solo acepta contenido con formato pegado desde el navegador o Word.
+      </p>
+    </div>
+
+    <h2>¿Y lo responsive?</h2>
+    <div class="card">
+      <p>
+        Las firmas de Gmail <strong>no soportan bien</strong> CSS responsive (media queries).
+        La opción óptima de calidad es un diseño <strong>compacto de ~520px</strong> que se ve nítido
+        en escritorio y se escala en el móvil de Gmail.
+      </p>
+      <p>
+        Si quieres priorizar el móvil, en
+        <a href="firma-gmail-local.html">firma-gmail-local.html</a> tienes la pestaña
+        <strong>Diseño vertical (móvil)</strong>: más estrecho y apilado, suele leerse mejor en el teléfono.
+      </p>
+    </div>
+
+    <h2>Archivos a subir (<code>hosting/</code>)</h2>
+    <div class="card">
+      <p style="margin:0">
+        <code>foto-180.jpg</code>, <code>logo.png</code>,
+        <code>icon-phone.png</code>, <code>icon-email.png</code>,
+        <code>icon-web.png</code>, <code>icon-instagram.png</code>
+        (+ snippets <code>firma-horizontal.html</code> / <code>firma-vertical.html</code>)
+      </p>
+    </div>
+  </div>
+</body>
+</html>
