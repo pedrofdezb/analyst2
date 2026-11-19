@@ -1,12 +1,10 @@
-# Firma Gmail Ethica Properties (Webflow)
+# Firma Gmail — Ethica Properties
 
-Herramienta para crear y copiar la firma de correo de Jessica Navarro / ETHICA Properties.
+## Abrir (un clic)
 
-## Abrir (clicable)
+**https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/COPIAR-FIRMA-GMAIL.html**
 
-- **Guía Webflow → Gmail:** abre `WEBFLOW-GMAIL.html` en este repo (botón “Copiar firma para pegar en Gmail”).
-- Descarga el ZIP `firma-ethica-webflow-gmail.zip` si prefieres usarlo en local.
+1. Pulsa **Copiar firma para pegar en Gmail**
+2. Gmail → Configuración → Firma → Ctrl+V / Cmd+V → Guardar
 
-## Qué pegar en Gmail
-
-No pegues el código HTML. Usa el botón azul de la página: copia la firma **ya vista** y pégala en Gmail → Configuración → Firma.
+No hace falta subir nada a Webflow: las imágenes ya están en este repo (CDN público).

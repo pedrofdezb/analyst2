@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Copiar firma Gmail — Ethica Properties</title>
+<style>
+  body { margin:0; font-family:Arial,Helvetica,sans-serif; background:#f4f5f7; color:#111; }
+  .wrap { max-width:680px; margin:0 auto; padding:28px 18px 64px; }
+  h1 { font-size:22px; margin:0 0 8px; }
+  p { font-size:14px; line-height:1.55; color:#4b5563; }
+  .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:20px; margin:14px 0; }
+  .btn { appearance:none; border:0; cursor:pointer; background:#1e3a5f; color:#fff; font-size:16px; font-weight:700; padding:14px 22px; border-radius:10px; }
+  .btn.ok { background:#15803d; }
+  .sig { border:3px dashed #2563eb; padding:18px; border-radius:10px; margin-top:12px; background:#fff; }
+  .okbox { background:#f0fdf4; border:1px solid #bbf7d0; color:#166534; border-radius:8px; padding:12px 14px; font-size:14px; line-height:1.5; }
+  .steps { margin:0; padding-left:20px; }
+  .steps li { margin:6px 0; font-size:14px; color:#374151; line-height:1.45; }
+  #status { min-height:22px; margin-top:10px; font-weight:700; font-size:14px; color:#15803d; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Firma lista para Gmail</h1>
+  <div class="okbox">
+    Imágenes ya con URL pública (CDN). <strong>No copies código HTML.</strong>
+    Pulsa el botón azul y pega en Gmail la firma del recuadro.
+  </div>
+
+  <div class="card">
+    <button type="button" class="btn" id="btn" onclick="copiar()">Copiar firma para pegar en Gmail</button>
+    <p id="status"></p>
+    <p style="margin:12px 0 0;font-size:13px;color:#2563eb;font-weight:700;">↓ Esto es lo que se copia ↓</p>
+    <div class="sig" id="firma"><table cellpadding="0" cellspacing="0" border="0" role="presentation" width="520" style="border-collapse:collapse;border-spacing:0;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;width:100%;max-width:520px;">
+  <tr>
+    <td style="padding:0;">
+      <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;">
+        <tr>
+          <td style="padding:0 14px 0 0;vertical-align:middle;width:80px;">
+            <img src="https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/hosting/foto-180.jpg" width="80" height="80" alt="Jessica Navarro" style="display:block;width:80px;height:80px;border:0;outline:none;" />
+          </td>
+          <td style="padding:0 14px 0 0;vertical-align:middle;">
+            <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;">
+              <tr><td style="padding:0 0 3px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;line-height:1.25;color:#111111;">Jessica Navarro</td></tr>
+              <tr><td style="padding:0 0 1px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.35;color:#333333;">Consultora Inmobiliaria</td></tr>
+              <tr><td style="padding:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.35;color:#333333;">Fundadora | ETHICA Properties</td></tr>
+            </table>
+          </td>
+          <td style="padding:0 12px;vertical-align:middle;width:1px;">
+            <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;"><tr><td style="width:1px;height:64px;background-color:#9ca3af;font-size:0;line-height:0;">&nbsp;</td></tr></table>
+          </td>
+          <td style="padding:0;vertical-align:middle;">
+            <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;">
+              <tr>
+                <td style="padding:0 0 7px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+                  <a href="tel:+34615197556" style="color:#1a1a1a;text-decoration:underline;">
+                    <img src="https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/hosting/icon-phone.png" width="14" height="14" alt="" style="display:inline-block;border:0;vertical-align:middle;margin-right:7px;" />
+                    <span style="vertical-align:middle;">615197556</span>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:0 0 7px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+                  <a href="mailto:jessica@ethicaproperties.com" style="color:#1a1a1a;text-decoration:underline;">
+                    <img src="https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/hosting/icon-email.png" width="14" height="14" alt="" style="display:inline-block;border:0;vertical-align:middle;margin-right:7px;" />
+                    <span style="vertical-align:middle;">jessica@ethicaproperties.com</span>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+                  <a href="https://www.ethicaproperties.com" style="color:#1a1a1a;text-decoration:underline;">
+                    <img src="https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/hosting/icon-web.png" width="14" height="14" alt="" style="display:inline-block;border:0;vertical-align:middle;margin-right:7px;" />
+                    <span style="vertical-align:middle;">www.ethicaproperties.com</span>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:12px 0;">
+      <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="border-collapse:collapse;width:100%;"><tr><td style="height:1px;line-height:1px;font-size:0;background-color:#9ca3af;">&nbsp;</td></tr></table>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:0;">
+      <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="border-collapse:collapse;width:100%;">
+        <tr>
+          <td style="vertical-align:middle;text-align:left;">
+            <a href="https://www.ethicaproperties.com" style="text-decoration:none;">
+              <img src="https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/hosting/logo.png" width="130" alt="ETHICA Properties" style="display:block;width:130px;height:auto;border:0;outline:none;" />
+            </a>
+          </td>
+          <td style="vertical-align:middle;text-align:right;">
+            <a href="https://www.instagram.com/ethicaproperties/" style="text-decoration:none;">
+              <img src="https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/hosting/icon-instagram.png" width="28" height="28" alt="Instagram" style="display:inline-block;width:28px;height:28px;border:0;" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></div>
+  </div>
+
+  <div class="card">
+    <ol class="steps">
+      <li>Pulsa <strong>Copiar firma para pegar en Gmail</strong>.</li>
+      <li>Gmail → ⚙️ → <strong>Ver toda la configuración</strong>.</li>
+      <li>Pestaña <strong>General</strong> → sección <strong>Firma</strong>.</li>
+      <li>Clic dentro del cuadro de la firma → <code>Ctrl+V</code> / <code>Cmd+V</code>.</li>
+      <li>Debes ver foto + textos (no el código). → <strong>Guardar cambios</strong>.</li>
+    </ol>
+  </div>
+</div>
+<script>
+async function copiar() {
+  var el = document.getElementById('firma');
+  var btn = document.getElementById('btn');
+  var st = document.getElementById('status');
+  var html = el.innerHTML;
+  var text = el.innerText || '';
+  function ok() {
+    st.textContent = '✓ Copiada. Ahora pégala en Gmail → Firma (Ctrl+V / Cmd+V).';
+    btn.className = 'btn ok';
+    btn.textContent = '✓ Copiada — pégala en Gmail';
+  }
+  try {
+    if (navigator.clipboard && window.ClipboardItem) {
+      await navigator.clipboard.write([new ClipboardItem({
+        'text/html': new Blob([html], { type: 'text/html' }),
+        'text/plain': new Blob([text], { type: 'text/plain' })
+      })]);
+      ok(); return;
+    }
+  } catch (e) {}
+  var r = document.createRange(); r.selectNodeContents(el);
+  var s = getSelection(); s.removeAllRanges(); s.addRange(r);
+  if (document.execCommand('copy')) ok();
+  else {
+    st.style.color = '#b45309';
+    st.textContent = 'Firma seleccionada: pulsa Ctrl+C y luego pégala en Gmail.';
+  }
+}
+</script>
+</body>
+</html>
