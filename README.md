@@ -1,13 +1,12 @@
-# Firma Gmail — Ethica Properties
+# Firmas Gmail — Ethica Properties
 
-## Abrir como página (NO como código)
+## Abrir como página (no como código)
 
-Usa este enlace (renderiza el HTML en el navegador):
+- **Horizontal:** https://htmlpreview.github.io/?https://raw.githubusercontent.com/pedrofdezb/analyst2/main/COPIAR-FIRMA-GMAIL.html
+- **Vertical (nueva):** https://htmlpreview.github.io/?https://raw.githubusercontent.com/pedrofdezb/analyst2/main/COPIAR-FIRMA-GMAIL-VERTICAL.html
 
-**https://htmlpreview.github.io/?https://raw.githubusercontent.com/pedrofdezb/analyst2/main/COPIAR-FIRMA-GMAIL.html**
+Instagram: https://www.instagram.com/ethica_properties/
 
-1. Espera a que cargue la página (foto + botón azul).
-2. Pulsa **Copiar firma para pegar en Gmail**.
-3. Gmail → ⚙️ → Firma → Ctrl+V / Cmd+V → Guardar.
-
-> Si abres el archivo en jsDelivr o “Raw” de GitHub verás código. Eso es normal: esos enlaces no renderizan HTML.
+1. Abre la versión que quieras  
+2. Pulsa **Copiar firma para pegar en Gmail**  
+3. Gmail → Firma → Ctrl+V / Cmd+V → Guardar  

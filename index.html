@@ -3,150 +3,27 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Copiar firma Gmail — Ethica Properties</title>
+<title>Firmas Gmail Ethica</title>
 <style>
-  body { margin:0; font-family:Arial,Helvetica,sans-serif; background:#f4f5f7; color:#111; }
-  .wrap { max-width:680px; margin:0 auto; padding:28px 18px 64px; }
-  h1 { font-size:22px; margin:0 0 8px; }
-  p { font-size:14px; line-height:1.55; color:#4b5563; }
-  .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:20px; margin:14px 0; }
-  .btn { appearance:none; border:0; cursor:pointer; background:#1e3a5f; color:#fff; font-size:16px; font-weight:700; padding:14px 22px; border-radius:10px; }
-  .btn.ok { background:#15803d; }
-  .sig { border:3px dashed #2563eb; padding:18px; border-radius:10px; margin-top:12px; background:#fff; }
-  .okbox { background:#f0fdf4; border:1px solid #bbf7d0; color:#166534; border-radius:8px; padding:12px 14px; font-size:14px; line-height:1.5; }
-  .steps { margin:0; padding-left:20px; }
-  .steps li { margin:6px 0; font-size:14px; color:#374151; line-height:1.45; }
-  #status { min-height:22px; margin-top:10px; font-weight:700; font-size:14px; color:#15803d; }
-  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:12px; }
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f5f7;color:#111;}
+.wrap{max-width:640px;margin:0 auto;padding:36px 18px;}
+a.card{display:block;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:18px 20px;margin:12px 0;text-decoration:none;color:inherit;}
+a.card.primary{background:#1e3a5f;color:#fff;border-color:#1e3a5f;}
+.title{font-weight:700;font-size:16px;margin-bottom:4px;display:block;}
+.desc{font-size:13px;opacity:.85;display:block;line-height:1.45;}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>Firma lista para Gmail</h1>
-  <div class="okbox">
-    Imágenes con URL pública. <strong>No copies código HTML.</strong>
-    Pulsa el botón azul y pega en Gmail la firma del recuadro.
-  </div>
-
-  <div class="card">
-    <button type="button" class="btn" id="btn" onclick="copiar()">Copiar firma para pegar en Gmail</button>
-    <p id="status"></p>
-    <p style="margin:12px 0 0;font-size:13px;color:#2563eb;font-weight:700;">↓ Esto es lo que se copia ↓</p>
-    <div class="sig" id="firma"><table cellpadding="0" cellspacing="0" border="0" role="presentation" width="520" style="border-collapse:collapse;border-spacing:0;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;width:100%;max-width:520px;">
-  <tr>
-    <td style="padding:0;">
-      <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;">
-        <tr>
-          <td style="padding:0 16px 0 0;vertical-align:bottom;width:100px;">
-            <img src="https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/hosting/foto-180.jpg" width="100" height="100" alt="Jessica Navarro" style="display:block;width:100px;height:100px;border:0;outline:none;" />
-          </td>
-          <td style="padding:0 16px 0 0;vertical-align:bottom;">
-            <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;">
-              <tr><td style="padding:0 0 3px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;line-height:1.25;color:#111111;">Jessica Navarro</td></tr>
-              <tr><td style="padding:0 0 1px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.35;color:#333333;">Consultora Inmobiliaria</td></tr>
-              <tr><td style="padding:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.35;color:#333333;">Fundadora | ETHICA Properties</td></tr>
-            </table>
-          </td>
-          <td style="padding:0 12px;vertical-align:bottom;width:1px;">
-            <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;"><tr><td style="width:1px;height:100px;background-color:#9ca3af;font-size:0;line-height:0;">&nbsp;</td></tr></table>
-          </td>
-          <td style="padding:0;vertical-align:bottom;">
-            <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;">
-              <tr>
-                <td style="padding:0 0 7px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
-                  <a href="tel:+34615197556" style="color:#1a1a1a;text-decoration:none;">
-                    <img src="https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/hosting/icon-phone.png" width="14" height="14" alt="" style="display:inline-block;border:0;vertical-align:middle;margin-right:7px;" />
-                    <span style="vertical-align:middle;text-decoration:none;">615197556</span>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:0 0 7px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
-                  <a href="mailto:jessica@ethicaproperties.com" style="color:#1a1a1a;text-decoration:none;">
-                    <img src="https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/hosting/icon-email.png" width="14" height="14" alt="" style="display:inline-block;border:0;vertical-align:middle;margin-right:7px;" />
-                    <span style="vertical-align:middle;text-decoration:none;">jessica@ethicaproperties.com</span>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
-                  <a href="https://www.ethicaproperties.com" style="color:#1a1a1a;text-decoration:none;">
-                    <img src="https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/hosting/icon-web.png" width="14" height="14" alt="" style="display:inline-block;border:0;vertical-align:middle;margin-right:7px;" />
-                    <span style="vertical-align:middle;text-decoration:none;">www.ethicaproperties.com</span>
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:10px 0 4px 0;">
-      <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="border-collapse:collapse;width:100%;"><tr><td style="height:1px;line-height:1px;font-size:0;background-color:#9ca3af;">&nbsp;</td></tr></table>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:4px 0 0 0;">
-      <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="border-collapse:collapse;width:100%;">
-        <tr>
-          <td style="vertical-align:middle;text-align:left;padding:0;">
-            <a href="https://www.ethicaproperties.com" style="text-decoration:none;">
-              <img src="https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/hosting/logo.png" width="95" alt="ETHICA Properties" style="display:block;width:95px;height:auto;border:0;outline:none;" />
-            </a>
-          </td>
-          <td style="vertical-align:middle;text-align:right;padding:0;">
-            <a href="https://www.instagram.com/ethicaproperties/" style="text-decoration:none;">
-              <img src="https://cdn.jsdelivr.net/gh/pedrofdezb/analyst2@main/hosting/icon-instagram.png" width="26" height="26" alt="Instagram" style="display:inline-block;width:26px;height:26px;border:0;vertical-align:middle;" />
-            </a>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table></div>
-  </div>
-
-  <div class="card">
-    <ol class="steps">
-      <li>Pulsa <strong>Copiar firma para pegar en Gmail</strong>.</li>
-      <li>Gmail → ⚙️ → <strong>Ver toda la configuración</strong>.</li>
-      <li>Pestaña <strong>General</strong> → sección <strong>Firma</strong>.</li>
-      <li>Clic dentro del cuadro de la firma → <code>Ctrl+V</code> / <code>Cmd+V</code>.</li>
-      <li>Debes ver foto + textos (no el código). → <strong>Guardar cambios</strong>.</li>
-    </ol>
-  </div>
+  <h1 style="margin:0 0 8px;font-size:24px;">Firmas Gmail Ethica</h1>
+  <p style="color:#4b5563;font-size:14px;">Elige una versión. Usa htmlpreview si el enlace muestra código.</p>
+  <a class="card primary" href="COPIAR-FIRMA-GMAIL.html"><span class="title">Firma horizontal</span><span class="desc">Foto + nombre + contactos en fila. Instagram: ethica_properties</span></a>
+  <a class="card" href="COPIAR-FIRMA-GMAIL-VERTICAL.html"><span class="title">Firma vertical (nueva)</span><span class="desc">Foto grande a la izquierda, textos en vertical, logo e Instagram abajo (~440px)</span></a>
+  <p style="font-size:13px;color:#6b7280;margin-top:20px;">
+    Preview online:<br/>
+    <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/pedrofdezb/analyst2/main/COPIAR-FIRMA-GMAIL.html">Horizontal</a> ·
+    <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/pedrofdezb/analyst2/main/COPIAR-FIRMA-GMAIL-VERTICAL.html">Vertical</a>
+  </p>
 </div>
-<script>
-async function copiar() {
-  var el = document.getElementById('firma');
-  var btn = document.getElementById('btn');
-  var st = document.getElementById('status');
-  var html = el.innerHTML;
-  var text = el.innerText || '';
-  function ok() {
-    st.textContent = '✓ Copiada. Ahora pégala en Gmail → Firma (Ctrl+V / Cmd+V).';
-    btn.className = 'btn ok';
-    btn.textContent = '✓ Copiada — pégala en Gmail';
-  }
-  try {
-    if (navigator.clipboard && window.ClipboardItem) {
-      await navigator.clipboard.write([new ClipboardItem({
-        'text/html': new Blob([html], { type: 'text/html' }),
-        'text/plain': new Blob([text], { type: 'text/plain' })
-      })]);
-      ok(); return;
-    }
-  } catch (e) {}
-  var r = document.createRange(); r.selectNodeContents(el);
-  var s = getSelection(); s.removeAllRanges(); s.addRange(r);
-  if (document.execCommand('copy')) ok();
-  else {
-    st.style.color = '#b45309';
-    st.textContent = 'Firma seleccionada: pulsa Ctrl+C y luego pégala en Gmail.';
-  }
-}
-</script>
 </body>
 </html>
